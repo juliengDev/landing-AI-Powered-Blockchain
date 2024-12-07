@@ -8,9 +8,16 @@ Link to Figma: https://scrimba.com/links/santa-saas-figma
 :root {
   --color-primary: #55c57a;
   --red: rgba(143, 0, 2, 0.83);
+  --red2:#8F0002;
   --light-red: #FFF2F2;
   --dark-red: #470000;
   --pure-white:#fff;
+  --light-grey:#969696;
+  --light-grey2:#EAEAEA;
+  --dark-grey:#343434;
+  --light-pink: #FFF2F2;
+  --light-blue: #F2F2FF;
+
 }
 
 * {
@@ -51,10 +58,14 @@ a {
 img {
   max-width:100%;
 }
+
+/* HEADER  */
+
 .header { 
   min-height: 97.5rem;
   position: relative;
   z-index: 1;
+  margin-bottom: 35.3rem;
 }
 
 .header::before {
@@ -163,10 +174,140 @@ img {
   margin: 0 auto;
 }
 
-/* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; */
+/* MAIN */
+
+.product__txt__container {
+  font-size: 3.6rem;
+  text-align: center;
+  color: var(--dark-red);
+  padding-top:11.5rem;
+  font-weight: 700;
+  margin-bottom: 6.7rem;
+}
+.product__txt__container h2 {
+  line-height: 4.5rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.9rem;
+
+}
+.product__txt__container p {
+  font-size: 1.4rem;
+  color: var(--light-grey);
+  line-height: 1.7rem;
+  letter-spacing: 0.41px;
+}
+
+.product__main__container   {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 3.2rem;
+  color: var(--dark-grey);
+  margin: 0 12rem 10.5rem 0;
+}
+.product__main__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 27.6rem;
+  padding: 3.2rem;
+  border-radius:15px;
+  border: 1px solid var(--light-grey2);
+}
+.icon-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  width: 64px;
+  height: 64px;
+  background-color: var(--light-pink);
+  margin-bottom: 2.4rem;
+}
+.product__main__item__title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  letter-spacing: -0.41px;
+
+}
+.product__main__item__description {
+  font-size: 1.4rem;
+  color: var(--light-grey);
+  margin-bottom: 23.8px;
+  font-weight: 400;
+}
+.product__main__item__link {
+  color: var(--red2);
+  text-decoration: underline;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.solution {
+  background-color: var(--light-blue);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem;
+  overflow: hidden;
+  z-index: 0;
+}
+.solution::before {
+  content: "";
+  position: absolute;
+  background-color: var(--red2);
+  top: 15px;
+  right: -150px;
+  width: 193.2rem;
+  height: 134.2rem;
+  clip-path: circle(37%);
+  transform: translate(50%, -58%);
+  z-index: -1;
+}
+
+
+.solution__content {
+  max-width: 50%;
+  z-index: 1; /* Toujours au-dessus des backgrounds */
+}
+.solution__content h2 {
+  font-size: 3rem;
+  color: #470000; /* Rouge foncé */
+  margin-bottom: 2rem;
+}
+.solution__content p {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+}
+.solution__avatars {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.solution__avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.solution__avatars__container {
+  display: flex;
+  flex-direction: column;
+}
+.solution__image {
+  position: relative;
+  z-index: 1; /* Au-dessus des backgrounds */
+  max-width: 45%;
+}
+.solution__image img {
+  width: 100%;
+  border-radius: 16px; /* Border radius pour les coins arrondis */
+  box-shadow: 20px 20px 50px -12px rgba(0, 0, 0, 0.25); /* Ombre autour de l'image */
+}
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
