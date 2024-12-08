@@ -9,6 +9,7 @@ Link to Figma: https://scrimba.com/links/santa-saas-figma
   --color-primary: #55c57a;
   --red: rgba(143, 0, 2, 0.83);
   --red2:#8F0002;
+  --red3: #470000;
   --light-red: #FFF2F2;
   --dark-red: #470000;
   --pure-white:#fff;
@@ -176,6 +177,8 @@ img {
 
 /* MAIN */
 
+/* Product */
+
 .product__txt__container {
   font-size: 3.6rem;
   text-align: center;
@@ -244,15 +247,17 @@ img {
   font-weight: 600;
 }
 
+/* Solution */
+
 .solution {
   background-color: var(--light-blue);
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 5rem;
+  gap: 6.6rem;
   overflow: hidden;
   z-index: 0;
+  margin-bottom: 12.5rem;
 }
 .solution::before {
   content: "";
@@ -269,34 +274,44 @@ img {
 
 
 .solution__content {
-  max-width: 50%;
-  z-index: 1; /* Toujours au-dessus des backgrounds */
+  color: #470000;
+  max-width: 53.4rem;
+  z-index: 1;
+  margin: 16.3rem 0 15.5rem 12rem;
+
 }
 .solution__content h2 {
-  font-size: 3rem;
-  color: #470000; /* Rouge foncé */
-  margin-bottom: 2rem;
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 78px;
+  margin-bottom: 3rem;
 }
 .solution__content p {
-  font-size: 1.6rem;
-  color: #333;
-  margin-bottom: 2.5rem;
+  font-size: 1.4rem;
+  color: var(--light-grey);
+  line-height: 23.8px;
+  margin-bottom: 3.3rem;
 }
-.solution__avatars {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-.solution__avatars img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid #fff;
+
+.solution__content button {
+  background-color: var(--red2);
 }
 .solution__avatars__container {
   display: flex;
-  flex-direction: column;
+  gap: 2.3rem
+}
+
+.solution__avatars img {
+  width: 24px;
+  height: 24px;
+  margin-right: -1rem;
+  border-radius: 50%;
+  border: 1px solid var(--pure-white);
+}
+.solution__avatars__container p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--dark-grey);
 }
 .solution__image {
   position: relative;
@@ -305,8 +320,91 @@ img {
 }
 .solution__image img {
   width: 100%;
-  border-radius: 16px; /* Border radius pour les coins arrondis */
-  box-shadow: 20px 20px 50px -12px rgba(0, 0, 0, 0.25); /* Ombre autour de l'image */
+  margin-top: -1rem;
+}
+
+/* Pricing */
+
+.pricing__title {
+  text-align: center;
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: var(--red3);
+  line-height: 65.78px;
+  margin-bottom: 3.9rem;
+}
+
+.pricing__intro {
+  font-size: 1.4rem;
+text-align: center;
+line-height: 17.71px;
+color: var(--light-grey);
+}
+
+.button__container {
+  display: flex;
+  gap: 2.4rem;  
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-grey);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 4.4rem;
+}
+.toggle-button {
+  width: 100px; /* Largeur du bouton */
+  height: 48px; /* Hauteur du bouton */
+  background-color: var(--light-blue); /* Couleur de fond */
+  border-radius: 48px; 
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 8px; 
+}
+
+/* Cercle à l'intérieur */
+.toggle-circle {
+  width: 30px; /* Diamètre du cercle */
+  height: 32px;
+  background-color: var(--red2); /* Couleur du cercle */
+  border-radius: 50%; /* Cercle parfait */
+  position: relative;
+  transition: transform 0.3s ease; /* Animation pour un état actif éventuel */
+}
+
+.pricing__container {
+  max-width: 120rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;        
+}
+
+.pricing__card {
+  text-align: center;
+  max-width: 38.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 10px 56px 0px rgba(0, 0, 0, 0.05);
+  padding: 5rem 2.4rem;
+}
+.pricing__card__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  color: var(--dark-red);
+  margin-bottom: 2.4rem;
+}
+.pricing__card__intro {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--light-grey);
+}
+.pricing__card__price {
+  
 }
 /*
 SPACING SYSTEM (px)
