@@ -35,7 +35,8 @@ Link to Figma: https://scrimba.com/links/santa-saas-figma
 
 html {
   box-sizing: border-box;  
-  font-size: 62.5%;  
+  font-size: 62.5%;
+  scroll-behavior: smooth;  
 }
 
 body {
@@ -629,16 +630,6 @@ color: var(--light-grey);
   color: var(--dark-grey);
   margin-bottom: 2rem;
 }
-
-
-
-
-
-
-
-
-
-
 
 .grey {
   background-color: #c4c4c4 !important;
