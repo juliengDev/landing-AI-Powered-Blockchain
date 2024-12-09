@@ -15,6 +15,7 @@ Link to Figma: https://scrimba.com/links/santa-saas-figma
   --pure-white:#fff;
   --light-grey:#969696;
   --light-grey2:#EAEAEA;
+  --light-grey3:#F9F9F9;
   --dark-grey:#343434;
   --light-pink: #FFF2F2;
   --light-blue: #F2F2FF;
@@ -557,6 +558,79 @@ color: var(--light-grey);
   line-height: 24px;
   margin-bottom: 2.4rem;
 }
+
+
+/* FOOTER */ 
+
+
+ .footer__container {
+  display: flex;
+  margin: 0 auto !important;
+  background-color: var(--light-grey3);
+  padding: 7.9rem 11.5rem  0 12.1rem;
+  gap:31.9rem;
+  justify-content: space-between;
+
+ }
+.footer__identity {
+  display: flex;
+  flex-direction: column;
+  min-width: 23.5rem;
+
+}
+.footer__identity__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 4.45rem;
+
+}
+
+.footer__identity__logo__name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--dark-red);
+}
+.footer__identity__logo__txt {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--dark-grey);
+  line-height: 3.2rem;
+}
+
+
+
+.footer__identity__links {
+  display: flex;
+  gap: 6.9rem;
+  color: var(--dark-grey);
+  margin-bottom: 8.7rem;
+}
+
+.footer__identity__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+.footer__identity__group li  {
+  font-size: 1.6rem;
+  color: var(--dark-grey);
+  margin-bottom: 2.8rem;
+}
+.footer__identity__group li:last-child {
+  margin-bottom:0
+}
+.footer__identity__links img {
+  margin-top: -3rem;
+}
+.footer__copyright {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--dark-grey);
+  margin-bottom: 2rem;
+}
+
+
 
 
 
