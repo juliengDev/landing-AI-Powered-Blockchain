@@ -1,15 +1,14 @@
 # GiftChain - AI-Powered Blockchain Landing Page
 
-## Présentation du Projet
+## Project Overview
 
-GiftChain est une landing page dédiée à une solution innovante d'intelligence artificielle couplée à la technologie blockchain, développée dans le cadre du JavaScript Advent Calendar de Scrimba.
+GiftChain is a landing page dedicated to an innovative artificial intelligence solution combined with blockchain technology, developed as part of the Scrimba JavaScript Advent Calendar.
 
 ## Screenshot
 
-![Aperçu de GiftChain](/images/website.png)
+![GiftChain Preview](/images/website.png)
 
-
-## Technologies Utilisées
+## Technologies Used
 
 - **HTML5**
 - **CSS3**
@@ -17,28 +16,30 @@ GiftChain est une landing page dédiée à une solution innovante d'intelligence
 ## Installation
 
 ```bash
-# Clonez le repository
+# Clone the repository
 git clone https://github.com/juliengDev/landing-AI-Powered-Blockchain.git
 
-# Naviguez dans le dossier du projet
+# Navigate to the project folder
 cd landing-AI-Powered-Blockchain
 
-# Ouvrez index.html dans votre navigateur
+# Open index.html in your browser
 ```
 
-## Fonctionnalités
 
-- Interface utilisateur moderne
-- Intégration de concepts blockchain
-- Mise en avant des capacités d'IA
-- Desktop version uniquement
+## Features
 
-## Prérequis
+- Modern user interface
+- Integration of blockchain concepts
+- Showcasing AI capabilities
+- Desktop version only
 
-- Navigateur web moderne
-- Connexion Internet
+## Requirements
 
-## Structure du Projet
+- Modern web browser
+- Internet connection
+
+
+## Project Structure
 
 ```
 giftchain-landing-page/
@@ -52,27 +53,27 @@ giftchain-landing-page/
 
 ## Contribution
 
-1. Forkez le projet
-2. Créez votre branche de fonctionnalité (`git checkout -b feature/AmazingFeature`)
-3. Commitez vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Poussez votre branche (`git push origin feature/AmazingFeature`)
-5. Ouvrez une Pull Request
+1.	Fork the project
+2.	Create your feature branch (git checkout -b feature/AmazingFeature)
+3.	Commit your changes (git commit -m 'Add some AmazingFeature')
+4.	Push to the branch (git push origin feature/AmazingFeature)
+5.	Open a Pull Request
 
-## Auteur
+## Author
 
-**Votre Nom**
+**Julien Gilbert**
 - GitHub: [@JulienGDev](https://github.com/juliengDev/l)
 - LinkedIn: [Julien Gilbert](https://www.linkedin.com/in/julien-gilbert-reactjs/)
 
-## Licence
+## License
 
-Distribué sous la licence **MIT**. Voir `LICENSE` pour plus d'informations.
+Distributed under the MIT License. See LICENSE for more information.
 
-## Remerciements
+## Acknowledgments
 
-- [Scrimba](https://scrimba.com/) pour le challenge JavaScript
-- Toutes les sources d'inspiration
+- [Scrimba](https://scrimba.com/)  for the JavaScript challenge
+- All sources of inspiration
 
 ---
 
-*Développé avec ❤️ durant le JavaScript Advent Calendar*
+*Developed with ❤️ during the JavaScript Advent Calendar*

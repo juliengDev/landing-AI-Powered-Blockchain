@@ -36,10 +36,13 @@ Link to Figma: https://scrimba.com/links/santa-saas-figma
 html {
   box-sizing: border-box;  
   font-size: 62.5%;
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth;
+  height: 100%;  
 }
 
 body {
+  min-height: 100vh;
+  width: 100%;
   max-width: 144rem;
   margin: 0 auto;
   padding: 0;
@@ -47,6 +50,8 @@ body {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 400;
   font-style: normal;
+  position: relative;
+  overflow-x: hidden;
 }
 
 
@@ -122,6 +127,12 @@ img {
   align-items: center;
   gap: 1rem;
 }
+
+.header__mobile-container {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
 .btn {
   min-width: 127px; 
   width: auto; 
@@ -163,6 +174,11 @@ img {
   justify-self: center;
   margin-bottom: 8.2rem;
 }
+
+.header__button_container {
+  display: flex;
+  gap: 2rem;
+}
 .dashboard-img-wrapper {
   max-width: 108.7rem;
   
@@ -179,6 +195,49 @@ img {
 .dashboardImg {
   display: block;
   margin: 0 auto;
+}
+
+/* Burger menu  */
+.header__burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 100;
+}
+
+.header__burger-line {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px 0;
+  background-color: var(--pure-white);
+  transition: 0.3s ease-in-out;
+}
+.header__burger-line:nth-child(1) {
+  top: 0;
+}
+
+.header__burger-line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header__burger-line:nth-child(3) {
+  bottom: 0;
+}
+
+.header__burger.active .header__burger-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.header__burger.active .header__burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.header__burger.active .header__burger-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* MAIN */
@@ -569,7 +628,6 @@ color: var(--light-grey);
   margin: 0 auto !important;
   background-color: var(--light-grey3);
   padding: 7.9rem 11.5rem  0 12.1rem;
-  gap:31.9rem;
   justify-content: space-between;
 
  }
@@ -646,3 +704,195 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
+/* RESPONSIV */
+
+@media screen and (max-width: 1150px) {
+  html {
+      font-size: 56.25%; /* 9px */
+  }
+  body {
+    max-width: 115rem;
+  }
+
+  .header  {
+    margin-bottom: 46rem;
+    min-height: 70.5rem;
+  }
+  .header__navigation {
+      padding: 4rem 5rem;
+  }
+
+  .header__button_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header__hero h1 {
+    margin-top: 4rem;
+    line-height: 6.5rem;
+  }
+
+  .dashboard-img-wrapper {
+    top: 123%;
+  }
+  .product__main__container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .product__main__item {
+    align-items: center;
+    max-width: 60.6rem;
+  }
+  .product__txt__container h2 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .product__main__item__description {
+    text-align: center;
+  }
+.pricing__card {
+  max-width: 80%;
+  margin-bottom: 3.6rem;
+}
+  .solution {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+    text-align: center;
+  }
+  .solution::before {
+    display: none;
+  }
+  .solution__content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 8rem 0;   
+  }
+
+  .solution__content h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  .solution__image{
+    max-width: 80%;
+  }
+  .solution__content button {
+    align-self: center;
+  }
+
+  .solution__avatars__container {
+    justify-content: center;
+  }
+  .dashboard-img-wrapper {
+      max-width: 90%;
+  }
+
+  .pricing__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .customer__heading {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+  }
+  .customer__heading__navigation {
+    display: none;
+  }
+  .customer__testimonial {
+    max-width: 80%;
+  }
+
+  .customer__testimonial__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+    padding : 3rem 3rem;
+  }
+  .footer__identity {   
+    align-items: center;
+  }
+  .footer__identity__links {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .header__burger {
+      display: block;
+  }
+
+  .header__mobile-container {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100%;
+      background-color: var(--red2);
+      padding: 8rem 2rem 2rem;
+      transition: right 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      z-index: 10;
+  }
+
+  .header__mobile-container.active {
+      right: 0;
+  }
+
+  .header__nav__container {
+      flex-direction: column;
+      gap: 2rem;
+  }
+
+ 
+
+  .header__hero h1 {
+      font-size: 4rem;
+      line-height: 5rem;
+      padding: 0 2rem;
+  }
+
+  .header__hero p {
+      padding: 0 2rem;
+  }
+
+  .header__hero__btnContainer {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 2rem;
+  }
+
+  .btn {
+      width: 100%;
+      max-width: 30rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  html {
+      font-size: 50%; 
+  }
+
+  .header__navigation {
+      padding: 2rem;
+  }
+
+  .header__mobile-container {
+      width: 50%;
+  }  
+
+  .header__logoTitle {
+      font-size: 1.6rem;
+  }
+}

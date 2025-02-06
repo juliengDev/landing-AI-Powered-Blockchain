@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GiftChain.ai - AI-Powered Blockchain for Effortless Gift Management</title>
     <link rel="stylesheet" href="index.css"/>
+    <script src="./index.js" defer ></script>
 </head>
 <body>
 <header class="header">
@@ -13,18 +14,26 @@
             <img class="header__logoImg" src="images/logo-1.svg"  width="37px" height="37px" alt="GiftChain.ai logo">
             <span class="header__logoTitle">GiftChain.ai</span>
         </div>
-        <nav class="header__nav">
-            <ul class="header__nav__container">
-                <li><a href="#product">Product</a></li>
-                <li><a href="#solution">Solution</a></li>
-                <li><a href="#customer">Customer</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#about">About us</a></li>            
-            </ul>
-        </nav>
-        <div class="header__button_container">
-            <button class="btn" aria-label="Login">Login</button>
-            <button class="btn btn-secondary" aria-label="Sign up">Sign up</button>  
+        <button class="header__burger" aria-label="Menu" aria-expanded="false">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+        </button>
+
+        <div class="header__mobile-container">
+            <nav class="header__nav">
+                <ul class="header__nav__container">
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#solution">Solution</a></li>
+                    <li><a href="#customer">Customer</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about">About us</a></li>            
+                </ul>
+            </nav>
+            <div class="header__button_container">
+                <button class="btn" aria-label="Login">Login</button>
+                <button class="btn btn-secondary" aria-label="Sign up">Sign up</button>  
+            </div>
         </div>
     </section> 
     
@@ -410,8 +419,8 @@
                     <li><a href="#product">Product</a></li>
                 </ul>
             </div>
-            <img src="images/Mask group.png" alt="socialmedia logo">
         </div>
+        
     </div>
     <p class="footer__copyright">©2024 Julien Gilbert. All right reserved</p>
 </footer>
