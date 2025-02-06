@@ -5,17 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     burgerBtn.addEventListener('click', () => {
         mobileContainer.classList.toggle('active');
-        burgerBtn.classList.toggle('active'); // Ajout de cette ligne
+        burgerBtn.classList.toggle('active'); 
         burgerBtn.setAttribute('aria-expanded', 
             burgerBtn.getAttribute('aria-expanded') === 'false' ? 'true' : 'false'
         );
     });
 
-    // Fermer le menu quand on clique sur un lien
+ 
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
             mobileContainer.classList.remove('active');
-            burgerBtn.classList.remove('active'); // Ajout de cette ligne
+            burgerBtn.classList.remove('active'); 
             burgerBtn.setAttribute('aria-expanded', 'false');
         });
     });

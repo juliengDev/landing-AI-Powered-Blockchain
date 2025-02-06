@@ -853,9 +853,7 @@ FONT SIZE SYSTEM (px)
   .header__nav__container {
       flex-direction: column;
       gap: 2rem;
-  }
-
- 
+  } 
 
   .header__hero h1 {
       font-size: 4rem;
